@@ -1,10 +1,21 @@
 <?php 
+include('../../config/database.php');
+
 $fullname=$_POST['fname'];
 $email=$_POST['email'];
-$password=$_POST['passwd'];
+$passwd=$_POST['passwd'];
+$enc_pass=md5($passwd);
 
-echo "Your fullname".$fullname;
-echo "Your fullname".$email;
-echo "Your fullname".$passwd;
+$sql = "Insert into users (fullname, email, password) values ( '$fullname','$email', '$enc_pass')";
+$ans = pg_query($conn,$sql);
+if ($ans){
+echo "Use has been created successfully"; 
 
+
+}else {
+echo "Error: ".pg_last_error();
+
+}
+// Close conection
+pg_close($conn) 
 ?>
