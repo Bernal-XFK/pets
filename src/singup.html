@@ -12,13 +12,15 @@
         <img src="images/user_login.png" width="120"
     </center>
 
-    <form name = "signup-form" action="back end/singup.php" method="post">
+    <form name = "signup-form" action="backend/singup.php" method="post">
         <table border="0" align="center">
         <tr><td><input type="text" name="fname" placeholder="Fullname"  required></td></tr>
-        <tr><td><input type="email" name ="email" placeholder="joe@mail.com" ></td></tr>
+        <tr><td><input type="email" name ="email" placeholder="joe@mail.com" required></td></tr>
         <tr><td><input type="password" name="passwd" placeholder="*******" required></td></tr>
-        <tr><td  align="center"><button>Register</button></td></tr>
-        </table>
+        <tr><td  align="center"><button>Register</button>
+        <a href="singin.html"> Enter an acount </a> 
+       
+        </table> 
     </form>
     
 </body>
