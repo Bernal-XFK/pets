@@ -39,7 +39,7 @@ header ("Location:../home.php");
             header( "refresh:0;url=../home.php");
         }else{
             echo "<script>alert('Invalid email or password')</script>)";
-            header("refresh:0;url=../singin.html")
+            header("refresh:0;url=../singin.php")
         }
     }
     

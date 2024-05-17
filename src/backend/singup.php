@@ -12,7 +12,7 @@ $total = pg_num_rows($result);
 
 if($total > 0){
   echo "<script>alert('Email already exists')</script>)";
-  header("refresh:0;url../signin.html");
+  header("refresh:0;url../signin.php");
 }else{
   $sql ="
   INSERT INTO users (fullname, email, password) 
@@ -21,7 +21,7 @@ if($total > 0){
   $ans = pg_query($conn, $sql);
   if($ans){
     echo "<script>alert('user has been registered')</script>)";
-    header("refresh:0;url../signin.html");
+    header("refresh:0;url../singin.php");
   }else{
     echo "Error: " . pg_last_error();
   }
