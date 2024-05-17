@@ -11,7 +11,7 @@
     <form action="backend/signin.php" method="post">
         <input type="email" name="email" required placeholder="correo@mail.com">
         <input type="password" name="passwd" required placeholder="*****">
-        <button>Login</button><tr>
+        <button>Login</button>
 
         <tr><td aling ="center"> <a href="singup.html "> Create an acount </a>
     </form>
