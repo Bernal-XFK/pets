@@ -1,16 +1,13 @@
-
 <?php
-
-//session_start();
-//if(isset($_SESSION["id_user"])){
-    //header ("Location:../home.php");
-    
-      //  }else {
-      //      header ("Location:../singin.php");
-       // }
-
-    
+    session_start();
+    if(isset($_SESSION["id_user"])){
+        //header("Location:home.php");
+        header("refresh:0;url=home.php");
+        exit;
+    }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +18,10 @@
 </head>
 <body>
     <form action="backend/signin.php" method="post">
-        <input type="email" name="email" required placeholder="correo@mail.com">
+        <input type="email" name="email" required placeholder="@">
         <input type="password" name="passwd" required placeholder="*****">
         <button>Login</button>
-
-        <tr><td aling ="center"> <a href="singup.html "> Create an acount </a>
+        &nbsp;<a href = "signup.html">Create an account</a>
     </form>
 </body>
 </html>

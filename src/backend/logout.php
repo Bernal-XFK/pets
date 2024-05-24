@@ -1,7 +1,5 @@
 <?php
-
-session_start();
-session_destroy();
-
-header('location:../singin.php')
+    session_start();
+    session_destroy();
+    header('location:../signin.php');
 ?>
