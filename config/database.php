@@ -16,6 +16,6 @@ port=$port
 if(!$conn){
     die("connection error: " . preg_last_error());
 }else{
-    echo "Success!!!!!";
+    //echo "Success!!!!!";
 }
 ?>

@@ -15,6 +15,6 @@
     <title>Pets | Home</title>
 </head>
 <body>
-    <a href = "backend/logout.php">Sign out</a>
+    <a href = "src/signup.html">Sign out</a>
 </body>
 </html>
